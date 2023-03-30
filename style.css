@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: rgb(214, 173, 173);
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    background-color: rgb(184, 92, 92);
+    padding: 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.chatbox {
+    width: 50vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.messages {
+    display: flex;
+}
+
+.msg-user_2 {
+    width: 10vh;
+    align-items: center;
+    display: flex;
+    justify-content: left;
+}
+
+.msg-user_1 {
+    width: 0vh;
+    align-items: center;
+    display: flex;
+    justify-content: right;
+}
+
+.name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.name_2 {
+    width: 1px;
+    display: flex;
+    align-items: center;
+}
+
+img {
+    width: 60px;
+    margin: 7px;
+}
+
+.user-name {
+    display: flex;
+    font-weight: 600;
+    font-size: 22px;
+}
+
+.time {
+    display: flex;
+    justify-content: flex-end;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.text {
+    background-color: rgb(215, 197, 223);
+    padding: 20px 40px;
+    display: flex;
+    width: 70vh;
+    font-weight: 400;
+    font-size: 20px;
+    margin: 10px 20px 10px 20px;
+}
+
+.one {
+    background-color: rgb(185, 216, 153);
+    border-radius: 20px 20px 20px 0;
+} 
+
+.two {
+    background-color: rgb(152, 233, 213);
+    border-radius: 20px 20px 0 20px;
+}
+
+.three {
+    background-color: rgb(223, 182, 130);
+    border-radius: 20px 20px 20px 0;
+}
+
+.four {
+    background-color: rgb(127, 182, 184);
+    border-radius: 20px 20px 20px 0;
+}
+
+.five {
+    background-color: rgb(129, 212, 212);
+    border-radius: 20px 20px 20px 0;
+}
+
+.six {
+    background-color: rgb(159, 185, 233);
+    border-radius: 20px 20px 20px 0;
+}
+
+@media screen and (max-width: 990px) {
+    .chatbox {
+        width: 40vh;
+    }
+}
+
+@media screen and (max-width: 855px) {
+    .chatbox {
+        width: 20vh;
+        margin-top: 10px;
+    }
+
+    .time {
+        visibility: hidden;
+    }
+
+    h1 {
+        padding: 10px;
+    }
+
+    img {
+        width: 50px;
+    }
+
+    .text {
+        font-size: 15px;
+        width: 70%;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .user-name {
+        visibility: hidden;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    img {
+        width: 40px;;
+    }
+}
